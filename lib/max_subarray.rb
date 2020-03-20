@@ -154,7 +154,7 @@ def max_sub_array_DYNAMIC(nums)
                 
                 if curr_contender > curr_winner
                     curr_winner = curr_contender
-                    puts "\tnew winner of #{curr_contender}! Between indices #{i} to #{j}"
+                    puts "\tnew winner of #{curr_contender}! From index #{i} to end of segment starting with index #{j}"
                 end
                 j += 1
             end

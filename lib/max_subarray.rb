@@ -1,5 +1,5 @@
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 def max_sub_array(nums)
   return nil if nums == nil || nums.empty?
 

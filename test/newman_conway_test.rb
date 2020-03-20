@@ -32,7 +32,6 @@ describe "Newman Conway Tests" do
       newman_conway(input)
     }.must_raise ArgumentError
 
-
     # Arrange
     input = 1
 

@@ -24,31 +24,30 @@ describe "Newman Conway Tests" do
   end
 
   it "works with base cases" do
-        # Arrange
-        input = 0
+    # Arrange
+    input = 0
 
-        # Act-Assert
-        expect {
-          newman_conway(input)
-        }.must_raise ArgumentError
-    
+    # Act-Assert
+    expect {
+      newman_conway(input)
+    }.must_raise ArgumentError
 
-        # Arrange
-        input = 1
+    # Arrange
+    input = 1
 
-        # Act
-        answer = newman_conway(input)
-    
-        # Assert
-        expect(answer).must_equal "1"
+    # Act
+    answer = newman_conway(input)
 
-        # Arrange
-        input = 2
+    # Assert
+    expect(answer).must_equal "1"
 
-        # Act
-        answer = newman_conway(input)
-    
-        # Assert
-        expect(answer).must_equal "1 1"        
+    # Arrange
+    input = 2
+
+    # Act
+    answer = newman_conway(input)
+
+    # Assert
+    expect(answer).must_equal "1 1"        
   end
 end

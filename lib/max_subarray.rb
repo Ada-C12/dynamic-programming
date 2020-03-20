@@ -3,18 +3,22 @@
 def max_sub_array(nums)
   return nil if nums == nil || nums.empty?
 
-  max_so_far = 0
-  max_ending_here = 0
+  max_so_far = nums[0]
+  current_max = nums[0]
+  
+  length = nums.length
 
-  nums.each do |num|
-    max_ending_here += num
-
-    if (max_ending_here < 0)
-      max_ending_here = 0
+  (1...length).each do |index|
+    temp_max = current_max + nums[index]
+    
+    if temp_max > nums[index]
+      current_max = temp_max
+    else
+      current_max = nums[index]
     end
 
-    if (max_so_far < max_ending_here)
-      max_so_far = max_ending_here
+    if max_so_far < current_max
+      max_so_far = current_max
     end
   end
 

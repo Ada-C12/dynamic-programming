@@ -10,7 +10,7 @@ def newman_conway(num)
   counter = 3
 
   while counter <= num
-    answer = sequence[sequence[counter - 2] - 1] + sequence[(counter - sequence[ counter - 2]) - 1]
+    answer = sequence[sequence[counter - 2] - 1] + sequence[(counter - sequence[counter - 2]) - 1]
 
     sequence << answer
 

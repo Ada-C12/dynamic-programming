@@ -21,13 +21,13 @@ def p_helper(num, sequence)
 
   # REGRESSIVE CASE: add p for next integer in sequence
   # forumula: p(num) = p(p(num - 1)) + p(num - p(num - 1))
-  building_num = sequence.length + 1
+  next_integer = sequence.length + 1
   # if num is 4 previous_p is at index 2 (value: 2)
-  previous_p = sequence[building_num - 2]
+  previous_p = sequence[next_integer - 2]
   # now we need to look up p of the previous_p value
   p_previous_p = sequence[previous_p - 1]
   # find p of number minus previous number's p, then add it to p_previous_p
-  p = p_previous_p + sequence[(building_num - previous_p) - 1]
+  p = p_previous_p + sequence[(next_integer - previous_p) - 1]
   sequence << p
   return p_helper(num, sequence)
 end

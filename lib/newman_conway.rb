@@ -2,7 +2,7 @@
 
 # Time complexity: O(n)
 # Space Complexity: O(n) - creates an array & string that will
-# have a length equal to num
+# have a length equal to size of num
 def newman_conway(num)
   sequence = [0, 1, 1]
 

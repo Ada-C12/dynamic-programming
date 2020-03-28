@@ -1,8 +1,18 @@
 
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: o(n)
+# Space Complexity: o(1)
 def max_sub_array(nums)
-    return 0 if nums == nil
-    
-    raise NotImplementedError, "Method not implemented yet!"
+	return nil if nums.empty?
+  max = nums[0]
+	curr_max = 0
+	
+  nums.each do |num|
+    if num > num + curr_max
+      curr_max = num
+    elsif num + curr_max >= num
+      curr_max = num + curr_max
+		end
+		max = curr_max if curr_max > max 
+  end
+  return max
 end

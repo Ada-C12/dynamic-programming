@@ -1,7 +1,6 @@
-
-
 # Time complexity: o(n)
 # Space Complexity: o(n)
+
 def newman_conway(num)
   # raise NotImplementedError, "newman_conway isn't implemented"
   raise ArgumentError if num < 1

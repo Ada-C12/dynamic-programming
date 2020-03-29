@@ -5,10 +5,8 @@
 def newman_conway(num)
   raise ArgumentError if num < 1
   
-  return "1" if num == 1
-  
   sequence = [1, 1]
-  
+  return sequence[1].to_s if num == 1
   return sequence.join(" ") if num == 2
 
   # Not sure why it has to start as [0,1,1]? But it works, so.....yeah.

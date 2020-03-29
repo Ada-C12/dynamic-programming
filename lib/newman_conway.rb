@@ -19,5 +19,5 @@ def newman_conway(num)
     sequence += " #{newman_conway[i]}"
     i += 1
   end
-    return sequence
+  return sequence
 end

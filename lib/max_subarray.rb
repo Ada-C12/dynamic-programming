@@ -1,6 +1,5 @@
-
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 # Kadane's Algorithm
 def max_sub_array(nums)
 	return nil if nums.length == 0

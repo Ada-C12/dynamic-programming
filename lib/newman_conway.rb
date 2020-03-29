@@ -4,6 +4,7 @@
 # Space Complexity: o(n)
 def newman_conway(num)
   # raise NotImplementedError, "newman_conway isn't implemented"
+  raise ArgumentError if num < 1
   return "1" if num == 1
   array = [1, 1]
   i = 2
@@ -14,5 +15,5 @@ def newman_conway(num)
     array << current
     i += 1
   end
-  return array.join("")
+  return array.join(" ")
 end

@@ -1,6 +1,6 @@
 require_relative "test_helper"
 
-xdescribe "Newman Conway Tests" do
+describe "Newman Conway Tests" do
   it "works with 13" do
     # Arrange
     input = 13

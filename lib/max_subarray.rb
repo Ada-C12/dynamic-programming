@@ -8,6 +8,7 @@ def max_sub_array(nums)
     max = nums[0]
     current_sum = nums[0]
 
+    # start at num[1] because max and current_sum already set at num[0]
     i = 1
 
     while i < nums.length

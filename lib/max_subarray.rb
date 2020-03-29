@@ -1,3 +1,4 @@
+
 # Time Complexity: o(n)
 # Space Complexity: o(1)
 
@@ -9,7 +10,6 @@ def max_sub_array(nums)
 
   nums.each do |num|
     max_ending_here = max_ending_here + num
-
     if max_ending_here < num
       max_ending_here = num
     end

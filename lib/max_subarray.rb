@@ -25,12 +25,4 @@ def max_sub_array(nums)
     end 
 
     return max_so_far
-
-    # which one is larger, return that 
-    # if max_so_far > max_ending_here
-    #     answer = max_so_far
-    # else 
-    #     answer = max_ending_here
-    # end 
-    # return answer
 end

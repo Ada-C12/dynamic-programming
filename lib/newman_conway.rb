@@ -1,22 +1,9 @@
 
 
-# Time complexity: ?
-# Space Complexity: ?
-
-
-
-def newman_conway_helper(num) 
-  if num == 0
-    return 0
-  elsif 
-    num == 1 || num == 2
-    return 1
-  else
-    temp = num - 1
-    return temp
-  end
-  
-end
+# Time complexity: O(n)
+## As the number goes to infinity, its values have to be assessed relative to whatever's already in the array, but because it's based on an array, the look-up cost is very low given that an index value is being passed in. 
+# Space Complexity: O(n)
+## As the number goes to infinity, the amount of space will grow at the same rate
 
 def newman_conway(num)
   

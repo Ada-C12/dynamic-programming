@@ -1,6 +1,10 @@
 
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: O(n)
+## The method iterates over the entire array but does so only once
+
+# Space Complexity: O(1)
+## There are a limited number of variables that are constantly being re-assessed, so as the input goes to infitity the space requirements do not grow. 
+
 def max_sub_array(number_array)
     length = number_array.length
     if length == 0 

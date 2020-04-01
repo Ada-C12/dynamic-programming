@@ -1,6 +1,17 @@
 require_relative "test_helper"
 
 describe "Newman Conway Tests" do
+  it "works with 4" do
+    # Arrange
+    input = 4
+
+    # Act
+    answer = newman_conway(input)
+
+    # Assert
+    expect(answer).must_equal "1 1 2 2"
+  end
+
   it "works with 13" do
     # Arrange
     input = 13

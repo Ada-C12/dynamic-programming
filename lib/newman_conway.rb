@@ -8,34 +8,30 @@ def newman_conway(num)
   f = []
 
   if num == 1
-    f = [1]
+    return "1"
   elsif num == 2
-    f = [1,1]
+    return "1 1"
   else 
     f = [0,1,1]
-    
     i = 3 
+
     while i <= num 
       f << f[f[i - 1]] + f[i - f[i - 1]]
       i += 1
     end
-  end
-
-  if f[0] == 0
+  
+    string_results = ""
+    iteration = 0
     f = f[1..-1]
-  end
 
-  string_results = ""
-  iteration = 0
-
-  f.each do |result|
-    iteration +=1
-    if f.length == iteration
-      string_results += "#{result}"
-    else
-      string_results += "#{result}" + " "
+    f.each do |result|
+      iteration +=1
+      if f.length == iteration
+        string_results += "#{result}"
+      else
+        string_results += "#{result}" + " "
+      end
     end
+    return string_results
   end
-
-  return string_results
 end

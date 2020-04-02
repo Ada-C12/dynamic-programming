@@ -2,6 +2,7 @@
 # Time Complexity: O(n)
 # Space Complexity: O(1)
 def max_sub_array(nums)
+    # you calculated 
     return 0 if nums == nil
     
     current_max = nums[0]
